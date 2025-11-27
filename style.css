@@ -95,6 +95,9 @@ body {
     padding: 0;
 }
 
+.icon.phone {
+    color: #27ae60; /* Green accent for phone */
+}
 .contact-info li {
     display: flex;
     align-items: center;
