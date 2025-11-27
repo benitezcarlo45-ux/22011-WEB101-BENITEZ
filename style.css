@@ -1,4 +1,4 @@
-/* 1. Global Reset & Base Styles */
+/* 1. Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #f4f7f6, #e9ecef); /* Subtle gradient */
+    background-color: #f4f7f6;
     color: #333;
     display: flex;
     justify-content: center;
@@ -19,26 +19,20 @@ body {
 /* 2. Profile Card */
 .profile-card {
     background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     max-width: 420px;
     width: 100%;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
 /* 3. Header */
 .profile-header {
     background: #2c3e50;
     color: #fff;
+    text-align: center;
     padding: 40px 20px 70px;
     position: relative;
-    text-align: center;
 }
 
 .profile-img {
@@ -68,9 +62,9 @@ body {
 /* 4. Body */
 .profile-body {
     padding: 80px 30px 30px;
-    text-align: left;
 }
 
+/* 5. Bio */
 .bio {
     font-size: 0.95em;
     line-height: 1.6;
@@ -78,23 +72,19 @@ body {
     color: #555;
 }
 
-/* 5. Section Headings */
+/* 6. Section Headings */
 .profile-body h3 {
     font-size: 1.1em;
     color: #2c3e50;
     border-bottom: 2px solid #ecf0f1;
     padding-bottom: 6px;
-    margin-bottom: 12px;
+    margin: 20px 0 12px;
 }
 
-/* 6. Contact Info */
-.contact-info ul,
-.skills ul,
-.experience ul,
-.projects ul {
+/* 7. Contact Info */
+.contact-info ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .contact-info li {
@@ -119,7 +109,14 @@ body {
     font-size: 1.1em;
 }
 
-/* 7. Skills, Experience, Projects */
+/* 8. Skills, Experience, Projects */
+.skills ul,
+.experience ul,
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
 .skills li,
 .experience li,
 .projects li {
@@ -127,17 +124,23 @@ body {
     padding: 6px 0;
 }
 
-/* 8. Education */
+/* 9. Education */
 .education p {
     font-size: 0.9em;
     color: #444;
     line-height: 1.5;
 }
 
-/* 9. Responsive */
+/* 10. Responsive */
 @media (max-width: 480px) {
     .profile-card {
         max-width: 95%;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
     }
 
     .profile-header h1 {
@@ -147,10 +150,5 @@ body {
     .profile-header h2 {
         font-size: 0.9em;
     }
-
-    .profile-img {
-        width: 100px;
-        height: 100px;
-        bottom: -50px;
-    }
 }
+
