@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #eef2f5; /* Softer neutral background */
-    color: #333;
+    background: #0d1117; /* Dark futuristic background */
+    color: #e6e6e6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,27 +18,23 @@ body {
 
 /* 2. Profile Card */
 .profile-card {
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    max-width: 420px;
+    background: #1c1f24;
+    border: 2px solid #3a3f47; /* Metallic border */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.2); /* Neon glow */
+    max-width: 450px;
     width: 100%;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
 }
 
 /* 3. Header */
 .profile-header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: #fff;
+    background: linear-gradient(135deg, #1f2933, #2c3e50);
+    color: #00f0ff; /* Neon cyan text */
     text-align: center;
     padding: 40px 20px 70px;
     position: relative;
+    border-bottom: 2px solid #3a3f47;
 }
 
 .profile-img {
@@ -46,11 +42,12 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
+    border: 4px solid #00f0ff;
     position: absolute;
     bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: 0 0 15px rgba(0,255,255,0.6);
 }
 
 .profile-header h1 {
@@ -67,61 +64,39 @@ body {
 
 /* 4. Body */
 .profile-body {
-    padding: 80px 30px 30px;
+    padding: 80px 25px 30px;
 }
 
-/* 5. Bio */
-.bio {
-    font-size: 0.95em;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    color: #555;
-    text-align: justify;
+/* 5. Section Boxes */
+.profile-body > div {
+    background: #24282f;
+    border: 1px solid #3a3f47;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0,255,255,0.1);
 }
 
 /* 6. Section Headings */
 .profile-body h3 {
     font-size: 1.1em;
     font-weight: 600;
-    color: #2c3e50;
-    border-left: 4px solid #3498db; /* Accent line */
-    padding-left: 8px;
-    margin: 25px 0 12px;
+    color: #00f0ff;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3a3f47;
+    padding-bottom: 5px;
 }
 
-/* 7. Contact Info */
-.contact-info ul {
-    list-style: none;
-    padding: 0;
+/* 7. Bio */
+.bio {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #cfd2d6;
+    text-align: justify;
 }
 
-.icon.phone {
-    color: #27ae60; /* Green accent for phone */
-}
-.contact-info li {
-    display: flex;
-    align-items: center;
-    font-size: 0.9em;
-    padding: 6px 0;
-    color: #444;
-}
-
-.contact-info a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: #1d6fa5;
-}
-
-.icon {
-    margin-right: 10px;
-    font-size: 1.1em;
-}
-
-/* 8. Skills, Experience, Projects */
+/* 8. Contact Info */
+.contact-info ul,
 .skills ul,
 .experience ul,
 .projects ul {
@@ -129,32 +104,56 @@ body {
     padding: 0;
 }
 
+.contact-info li {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    padding: 6px 0;
+    color: #cfd2d6;
+}
+
+.contact-info a {
+    color: #00f0ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #00a3a3;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+/* 9. Skills, Experience, Projects */
 .skills li,
 .experience li,
 .projects li {
     font-size: 0.9em;
     padding: 6px 0;
-    color: #444;
+    color: #cfd2d6;
 }
 
 .projects a {
-    color: #3498db;
+    color: #00f0ff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .projects a:hover {
-    color: #1d6fa5;
+    color: #00a3a3;
 }
 
-/* 9. Education */
+/* 10. Education */
 .education p {
     font-size: 0.9em;
-    color: #444;
+    color: #cfd2d6;
     line-height: 1.5;
 }
 
-/* 10. Responsive */
+/* 11. Responsive */
 @media (max-width: 480px) {
     .profile-card {
         max-width: 95%;
@@ -174,4 +173,5 @@ body {
         font-size: 0.9em;
     }
 }
+
 
