@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #0d1117; /* Dark futuristic background */
+    background: #0d1117; /* Dark robotic background */
     color: #e6e6e6;
     display: flex;
     justify-content: center;
@@ -19,8 +19,8 @@ body {
 /* 2. Profile Card */
 .profile-card {
     background: #1c1f24;
-    border: 2px solid #3a3f47; /* Metallic border */
-    border-radius: 8px;
+    border: 2px solid #3a3f47;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,255,255,0.2); /* Neon glow */
     max-width: 450px;
     width: 100%;
@@ -30,7 +30,7 @@ body {
 /* 3. Header */
 .profile-header {
     background: linear-gradient(135deg, #1f2933, #2c3e50);
-    color: #00f0ff; /* Neon cyan text */
+    color: #00f0ff;
     text-align: center;
     padding: 40px 20px 70px;
     position: relative;
