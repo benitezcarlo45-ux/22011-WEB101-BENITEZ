@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use the linked Google Font */
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 2. Profile Card Container Styling */
+.profile-card {
+    background-color: #ffffff; /* White card background */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden; /* Important for the header background */
+}
+
+/* 3. Header Section (Image & Name) */
+.profile-header {
+    background-color: #2c3e50; /* Dark blue/charcoal header background */
+    color: #ffffff;
+    padding: 30px 20px 70px 20px; /* Extra padding at bottom for image overlap */
+    position: relative;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    border: 5px solid #ffffff; /* White border for emphasis */
+    position: absolute; /* Position relative to the header */
+    bottom: -60px; /* Move half way out of the header */
+    left: 50%;
+    transform: translateX(-50%); /* Center the image exactly */
+}
+
+.profile-header h1 {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+}
+
+.profile-header h2 {
+    font-weight: 300;
+    font-size: 1em;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* 4. Body Section (Bio & Links) */
+.profile-body {
+    padding: 80px 30px 30px 30px; /* Top padding to account for image overlap */
+}
+
+.bio {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contact-info h3 {
+    text-align: left;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1; /* Light divider */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.contact-info li {
+    padding: 8px 0;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #3498db; /* Blue link color */
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
